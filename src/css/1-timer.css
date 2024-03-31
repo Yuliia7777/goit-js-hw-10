@@ -1,0 +1,33 @@
+:root {
+  --width: 240px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.beginers {
+  margin-top: 420px;
+  margin: 0 auto;
+}
+.timer {
+  margin-top: 12px;
+  margin-bottom: 120px;
+  display: flex;
+  gap: 8px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-size: 40px;
+}
+
+.label {
+  text-transform: uppercase;
+  font-size: 12px;
+}
