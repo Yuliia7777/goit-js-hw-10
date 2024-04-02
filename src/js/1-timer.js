@@ -21,6 +21,7 @@ import 'izitoast/dist/css/iziToast.min.css';
     if (selectedDate >= currentDate) {
       _selectedDate = selectedDate;
       btnStart.disabled = false;
+      flatPicker.set('minDate', 'today');
       return;
     }
 
@@ -37,7 +38,7 @@ import 'izitoast/dist/css/iziToast.min.css';
   }
 
   const flatpickr_option = {
-    minDate: 'today',
+    //minDate: 'today',
     enableTime: true,
     enableSeconds: true,
     dateFormat: 'Y-m-d H:i:S',
@@ -113,4 +114,4 @@ import 'izitoast/dist/css/iziToast.min.css';
     return { days, hours, minutes, seconds };
   }
 }
-console.log('1-timer.js - loaded');
+
